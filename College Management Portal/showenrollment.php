@@ -9,7 +9,7 @@
 			 
  		?>
 			<h1>ENROLLMENTS</h1><br>
-			<a href="form6.php"><br><font size="6">ADD COURSES</font></a><br><br>
+			<a href="form6.php"><br><font size="6">ADD ENROLLMENTS</font></a><br><br>
 		<?php	
 			 
 			 //run query
