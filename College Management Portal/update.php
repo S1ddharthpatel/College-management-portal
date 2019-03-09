@@ -6,8 +6,8 @@
 			<?php
 				
 				//construction of query	
-				$autoquery="UPDATE `students` SET `student_name` = '".$_POST["student_name"]."',
-												`student_phone_number`=".$_POST['student_phone_number'].",
+				$autoquery="UPDATE `students` SET `student_name` = '".$_POST["name"]."',
+												`student_phone_number`=".$_POST['phone_number'].",
 												`status`= '".$_POST["status"]."' WHERE `students`.`student_id` = ".$_POST['student_id'];
 				
 
