@@ -8,7 +8,7 @@
 				//connectio to server
 						include "connection.php"; 	
 					
-						$query="SELECT * FROM `students` WHERE `student_name`='".$_GET['student_name']."'";
+						$query="SELECT * FROM `students` WHERE student_name ='".$_GET['student_name']."'";
 						$stud=mysqli_query($conn,$query);
 						$row=mysqli_fetch_array($stud);
 						

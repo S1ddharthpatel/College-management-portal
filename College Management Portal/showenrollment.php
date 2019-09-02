@@ -28,9 +28,9 @@
 				{    
 					echo	 "<tr>
 								<td align='center'>".$stu['id']."</td>
-								<td align='center'><a href='student.php?student_name='".$stu['student_name']."'><br>".$stu['student_name']."</a></td>
-								<td align='center'><a href='course.php?course_name='".$stu['course_name']."'><br>".$stu['course_name']."</a></td>
-								<td align='center'><a href='editenrollment.php?id='".$stu['id']."'><br>Edit</a></td>
+								<td align='center'><a href='student.php?student_name=".$stu['student_name']."'><br>".$stu['student_name']."</a></td>
+								<td align='center'><a href='course.php?course_name=".$stu['course_name']."'><br>".$stu['course_name']."</a></td>
+								<td align='center'><a href='editenrollment.php?id=".$stu['id']."'><br>Edit</a></td>
 							</tr>";
 				}
 			

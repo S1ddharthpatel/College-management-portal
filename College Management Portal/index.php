@@ -10,8 +10,8 @@
 		<h2>LOGIN PAGE</h2>
 		<br>
 <?php 
-		$loginid = "sid";
-		$password =12345;
+		$loginid = "12345";
+		$password =0000;
 		
 			if(isset($_POST["pass"])&& isset($_POST["id"]))
 			{

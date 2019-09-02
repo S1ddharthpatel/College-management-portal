@@ -35,8 +35,7 @@
 									<td align='center'>".$stu['student_name']."</td>
 									<td align='center'>".$stu['student_phone_number']."</td>
 									<td align='center'>".$stu['status']."</td>
-									<td align='center'><a href='editstudent.php?student_id=".$stu['student_id']."'><br>Edit</a></td>
-									<td align='center'><a href='delete.php?student_id=".$stu['student_id']."'><br>DELETE</a></td>
+									<td align='center'><a href='editstudent.php?student_id=".$stu['student_id']."'><br>Edit</a></td>	
 								</tr>";
 					}
 					

@@ -6,9 +6,10 @@
 			<?php
 				
 				//construction of query	
-				$autoquery="UPDATE `courses` SET `course_name` = '".$_POST["course_name"]."' WHERE `courses`.`course_name` = '".$_POST['course_name']."'";
-							"UPDATE `department` SET `department_name`= '".$_POST["department_name"]."'WHERE `department`.`department_name` = '".$_POST['department_name']."'";
-							"UPDATE `faculty` SET `faculty_name`= '".$_POST["faculty_name"]."' WHERE `faculty`.`faculty_name` = '".$_POST['faculty_name']."'";
+				$autoquery="UPDATE `courses`, `department`, `faculty` 
+							SET `course_name` = '".$_POST["course_name"]."', `department_name`= '".$_POST["department_name"]."', `faculty_name`= '".$_POST["faculty_name"]."'
+							WHERE `courses`.`course_name` = '".$_POST['course_name']."' AND `department`.`department_name` = '".$_POST['department_name']."' AND `faculty`.`faculty_name` = '".$_POST['faculty_name']."'";
+								
 												
 				//connectio to server
 					include "connection.php"; 	

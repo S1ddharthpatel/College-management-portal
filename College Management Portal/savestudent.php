@@ -15,7 +15,7 @@
 				//construction of query
 
 					$autoquery= "INSERT INTO `students`(`student_id`, `student_name`, `student_phone_number`, `admission_time`, `status`)
-						VALUES (NULL,'".$_POST['student_name']."',".$_POST['student_number'].", CURRENT_TIMESTAMP, '".$_POST['status']."')";
+						VALUES (NULL,'".$_POST['student_name']."',".$_POST['student_number'].", CURRENT_TIMESTAMP , '".$_POST['status']."')";
 
 
 
