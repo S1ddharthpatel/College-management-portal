@@ -7,7 +7,7 @@ The portals allows the user to add, edit and view student, faculty, department, 
 All the clicks which lead to a different page are in blue colour and underlined.
 
 Database - MySQL
-Frontend - HTML & PHP
+Frontend - HTML, PHP, JavaScript & CSS
 
 
 How to start/open the portal:
