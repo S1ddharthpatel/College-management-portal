@@ -1,0 +1,26 @@
+.nav-heading {
+	color:#24a7d5;
+	font-size:200%;
+}
+#slider{
+	float:left;
+	margin-right:20px;
+	width:70%;
+}
+
+#logo{
+	margin-left:80px;
+	margin-top: 10px;
+	}
+
+h2{
+	margin:10px;
+	font-size:200%;
+}
+
+.login {
+	margin-left:100px;
+	display:inline-block;
+	float:left;
+	width:20%;
+}

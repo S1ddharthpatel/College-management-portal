@@ -1,6 +1,6 @@
 <html>
 
-	<body style="background-color:powderblue;">
+	<body style="background-color:#24a1b75;">
 			<?php include "header.php" ?><br>
 		
 			<?php

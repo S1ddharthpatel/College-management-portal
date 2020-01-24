@@ -1,15 +1,21 @@
 <html>
+<head>
+		<link rel="stylesheet" href="details.css" type"text/css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
 
-	<body style="background-color:powderblue;">
-		<?php include "header.php" ?><br>
+	<body style="background-color:#24a1b7;">
+		<?php include "header.php" ?>
 
 		<?php
 			//connectio to server
 				include "connection.php"; 	
 			 
  		?>
-			<h1>DEPARTMENT DETAILS</h1><br>
-			<a href="form4.php"><br><font size="6">ADD DEPARTMENT</font></a><br><br>
+			<h1  class="h1">DEPARTMENT DETAILS</h1>
+			<button class="addbut" onclick="window.location.href='form4.php';"><font size="6">ADD DEPARTMENT</font></button><br>
+	<div id="table">
 		<?php	
 			 
 			 //run query
@@ -18,20 +24,20 @@
 					$departmentdata=mysqli_query($conn,$query);
 
 			//printing table
-					echo	"<table style='width:100%' border='1' >
+					echo	"<table class='table  table-hover table-sm' style='width:100%' style='font-size:20px'>
 							<tr>
-								<th>ID</th>
-								<th>Name</th>
-								<th>Block</th>
-								
+								<th style='font-size:20px'>ID</th>
+								<th style='font-size:20px'>Name</th>
+								<th style='font-size:20px'>Block</th>
+								<th style='font-size:20px'></th>
 							</tr>";
 				foreach($departmentdata as $stu)
 				{    
 					echo	 "<tr>
-								<td align='center'>".$stu['department_id']."</td>
-								<td align='center'>".$stu['department_name']."</td>
-								<td align='center'>".$stu['address']."</td>
-								<td align='center'><a href='editdept.php?department_id=".$stu['department_id']."'><br>Edit</a></td>
+								<td>".$stu['department_id']."</td>
+								<td>".$stu['department_name']."</td>
+								<td>".$stu['address']."</td>
+								<td><a id='editlink' href='editdept.php?department_id=".$stu['department_id']."'>Edit</a></td>
 							</tr>";
 				}
 			
@@ -39,5 +45,6 @@
 
 
 		?>
+	</div>	
 	</body>
 </html>

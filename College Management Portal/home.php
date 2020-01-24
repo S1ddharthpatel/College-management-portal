@@ -1,22 +1,30 @@
 <html>
 	<head>
 		<title> Login form </title>
+		<link rel="stylesheet" href="home.css" type"text/css" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	</head>
-	<body style="background-color:powderblue;">
-		<h1 style="font-size:40px;"><u>WELCOME TO THE COLLEGE MANAGEMENT PORTAL  
-		<img src="logo1.jpg" alt="Christ" height="300" width="300" align="right" HSPACE=”300”  /> </u></h1>		
+ 
+	<body style="background-color:#24a1b7;">
+		
+		<?php include "header.php"; ?>
+		
+		<img id="img" src="Photos/logo.jpg" height="275" width="450" align="right" HSPACE=”500” />
+		
 		<br>
+			<h1 style="font-size:80px;"><u>COLLEGE MANAGEMENT<br>PORTAL </u></h1>		
 		<br>
 		<br>				
-							<a href="showstudents.php"><br><font size="6">STUDENT DETAILS</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="form2.php"><font size="6">ADD STUDENT</font></a>
-							<a href="showfaculty.php"><br><font size="6">FACULTY DETAILS</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="form3.php"><font size="6">ADD FACULTY</font></a>
-							<a href="showdept.php"><br><font size="6">DEPARTMANT DETAILS</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="form4.php"><font size="6">ADD DEPARTMANT</font></a>
-							<a href="showcourses.php"><font size="6"><br>COURSES DETAILS</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="form5.php"><font size="6">ADD COURSES</font></a>
-							<a href="showenrollment.php"><br><font size="6">ENROLLMENT DETAILS</font></a>&nbsp;&nbsp;&nbsp;&nbsp;
-							<a href="form6.php"><font size="6">ADD ENROLLMENTS</font></a>
+							<button class="but" type="button" onclick="window.location.href='showstudents.php';"><font size="6">STUDENT DETAILS</font></button>
+							<button class="abut" type="button" onclick="window.location.href='form2.php';"><font size="6">ADD STUDENT</font></button><br>
+							<button class="but" type="button" onclick="window.location.href='showfaculty.php';"><font size="6">FACULTY DETAILS</font></button>
+							<button class="abut" class="but1" class="but1" class="but1" class="but1" class="but1" class="but1" type="button" onclick="window.location.href='form3.php';"><font size="6">ADD FACULTY</font></button><br>
+							<button class="but" class="but1" class="but1" class="but1" class="but1" class="but1" type="button" onclick="window.location.href='showdept.php';"><font size="6">DEPARTMANT DETAILS</font></button>
+							<button class="abut" class="but1" class="but1" class="but1" class="but1" type="button" onclick="window.location.href='form4.php';"><font size="6">ADD DEPARTMANT</font></button><br>
+							<button class="but" class="but1" class="but1" class="but1" type="button" onclick="window.location.href='showcourses.php';"><font size="6">COURSES DETAILS</font></button>
+							<button class="abut" class="but1" class="but1" type="button" onclick="window.location.href='form5.php';"><font size="6">ADD COURSES</font></button><br>
+							<button class="but" class="but1" type="button" onclick="window.location.href='showenrollment.php';"><font size="6">ENROLLMENT DETAILS</font></button>
+							<button class="abut" type="button" onclick="window.location.href='form6.php';"><font size="6">ADD ENROLLMENTS</font></button>
 	</body>
 </html>

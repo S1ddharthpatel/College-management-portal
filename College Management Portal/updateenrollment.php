@@ -1,6 +1,6 @@
 <html>
 
-	<body style="background-color:powderblue;">
+	<body style="background-color:#24a1b7;">
 			<?php include "header.php" ?><br>
 		
 			<?php
@@ -17,6 +17,7 @@
 						{echo "<br>successfully inserted";}
 					else
 						{echo mysqli_error($conn);}				
+				
 				
 			?>
 			

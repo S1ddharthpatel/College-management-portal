@@ -1,0 +1,17 @@
+CREATE/ INSERT-
+INSERT INTO `TABLE`(`coloum1`, `coloum2`, `coloum3`, `coloum3`) VALUES ([value-1],[value-2],[value-3],
+[value-4])
+
+RETREIVE-
+SELECT name, phone from student s Join courses c join enrollment on e.student_id=s.id and e.course_id=c.1d
+where s.name='Jack'
+
+UPDATE-
+UPDATE `TABLE` SET `column` = 'updation' WHERE `table`.`id` = 5;
+
+DELETE- 
+DELETE FROM `TABLE` WHERE 0
+
+````````-> to escape sql function
+''''''''-> for strings
+NULL will not 

@@ -1,0 +1,28 @@
+COLLEGE MANAGEMENT PORTAL
+
+The portals allows the user to add, edit and view student, faculty, department, courses and course enrollment details. It has a basic user interface for user to understand easily and and use the portal.
+All the clicks which lead to a different page are in blue colour and underlined.
+
+Database - MySQL
+Frontend - HTML & PHP
+
+
+How to start/open the portal:
+
+Download all the php and database files and xampp (or any other local server softwares)
+Paste the files in the designated folder, then to access the portal switch on the local server and enter the link given below
+
+
+link:
+	http://localhost/college%20management%20portal/index.php
+login :
+	id - 12345
+	password - 0000
+
+Link to access the data base:
+	http://localhost/phpmyadmin/db_structure.php?server=1&db=workshop
+
+Server:
+	severname="localhost"
+	username="root"
+	password=""

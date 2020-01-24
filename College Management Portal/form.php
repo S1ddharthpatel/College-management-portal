@@ -1,12 +1,12 @@
 <html>
 
-	<body style="background-color:powderblue;">
+	<body style="background-color:#24a1b7;">
 
 			<form action="index.php" method="post">
-				LOGIN ID: <input type="text" name="id"/><br>			
-				PASSWORD: <input type="password" name="pass"/><br>
-				<input type="submit"/>
-				<input type="reset"/>
+				&nbsp USERNAME: <input type="text" name="id"/><br><br>			
+				&nbsp PASSWORD: <input type="password" name="pass"/><br><br>
+				&nbsp <input type="submit"/>
+				&nbsp <input type="reset"/>
 			</form>	
 	</body>	
 </html>
