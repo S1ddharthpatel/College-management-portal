@@ -20,7 +20,7 @@
 			?>
 				<br>
 				<div class="jumbotron">	
-					<h2 class="display-4">Enter the student details</h2>
+					<h2 class="display-4">Edit the department details</h2>
 					<hr class="my-4">
 					<div class="lead">
 					<form action="updatedept.php" method="post">

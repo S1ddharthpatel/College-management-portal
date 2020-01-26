@@ -1,8 +1,13 @@
 <html>
-
+	<style>
+		#table{
+			margin:30px;
+		}
+	</style>
+	<title>Department info</title>	
 	<body style="background-color:#24a1b7;">
 			<?php include "header.php" ?><br>
-
+		<div id="table">
 			<?php
 
 				//connectio to server
@@ -13,7 +18,7 @@
 						$row=mysqli_fetch_array($dept);
 						
 				//printing table
-						echo	"<table style='width:100%' border='1' >
+						echo	"<table class='table  table-hover table-sm' style='width:100%' style='font-size:20px' >
 								<tr>
 									<th>ID</th>
 									<th>Name</th>
@@ -22,13 +27,14 @@
 						
 						   
 							echo	 "<tr>
-										<td align='center'>".$row['department_id']."</td>
-										<td align='center'>".$row['department_name']."</td>
-										<td align='center'>".$row['address']."</td>
+										<td>".$row['department_id']."</td>
+										<td>".$row['department_name']."</td>
+										<td>".$row['address']."</td>
 									</tr>";
 						
 					
 						echo	"</table>";
 			?>	
+		</div>	
 	</body>
 </html>				

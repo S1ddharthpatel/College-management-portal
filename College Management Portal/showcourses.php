@@ -30,6 +30,7 @@
 								<th style='font-size:20px'>Faculty name</th>
 								<th style='font-size:20px'>Department name</th>	
 								<th></th>
+								<th></th>
 							</tr>";
 				foreach($coursedata as $stu)
 				{    
@@ -38,6 +39,7 @@
 								<td>".$stu['course_name']."</td>
 								<td><a id='link' href='faculty.php?faculty_name=".$stu['faculty_name']."'><u>".$stu['faculty_name']."</u></a></td>
 								<td><a id='link' href='department.php?department_name=".$stu['department_name']."'><u>".$stu['department_name']."</u></a></td>
+								<td><a id='editlink' href='enrollment.php?course_id=".$stu['course_id']."'>Enrollments</a></td>
 								<td><a id='editlink' href='editcourse.php?course_id=".$stu['course_id']."'>Edit</a></td>
 							</tr>";
 				}
