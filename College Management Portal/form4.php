@@ -6,10 +6,11 @@
 
 		<?php include "header.php" ?>
 	</head>
+		<title>Add new Department</title>
 	<body style="background-color:#24a1b7;">
 			<h1  class="h1"><u>ADMINISTRATIVE FORM</u></h1><br>
 		 <div class="jumbotron">		
-			<h2 class="display-4">Enter the department details</h2>
+			<h2 class="display-4">Enter the new department details</h2>
 			<hr class="my-4">
 			<div class="lead">
 				<form action="savedept.php" method="post">

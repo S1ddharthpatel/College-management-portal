@@ -6,11 +6,12 @@
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 		<?php include "header.php" ?>		
 	</head>
+		<title>Add new Student</title>
 	<body style="background-color:#24a1b7;">
 			<h1 class="h1"><u>ADMINISTRATIVE FORM</u></h1><br>	 
 	 
 	 <div class="jumbotron">	
-			<h2 class="display-4">Enter the student details</h2>
+			<h2 class="display-4">Enter the new student details</h2>
 			<hr class="my-4">
 			<div class="lead">
 				<form action="savestudent.php" method="post">
