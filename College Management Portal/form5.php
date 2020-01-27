@@ -14,10 +14,12 @@
 				include "connection.php"; 	
 						 
 				//run query
-					$query="SELECT * from courses c JOIN faculty f JOIN department d on c.faculty_id=f.faculty_id AND c.department_id=d.department_id";
-
-					$coursedata=mysqli_query($conn,$query);
+					$query="SELECT * from faculty";
+					$facultydata=mysqli_query($conn,$query);
+					$quer="SELECT * from department";
+					$deptdata=mysqli_query($conn,$quer);
 			?>
+			
 		<div class="jumbotron">		
 			<h2  class="display-4">Enter the new course details</h2>
 			<hr class="my-4">
@@ -25,13 +27,13 @@
 				<form action="savecourse.php" method="post">
 				Name of the new Course: <input type="text" name="course_name"/><br>	<br>	
 				Faculty: &nbsp <select name="faculty_id">
-									<?php foreach($coursedata as $stu){?>
+									<?php foreach($facultydata as $stu){?>
 									<option value="<?php echo $stu['faculty_id'];?>"><?php echo $stu['faculty_name'];?></option>
 									<?php }?>
 								 </select> <br><br>
 				Department: &nbsp <select name="department_id">
-										<?php foreach($coursedata as $stu){?>
-										<option value="<?php echo $stu['department_id'];?>"><?php echo $stu['department_name'];?></option>
+										<?php foreach($deptdata as $dept){?>
+										<option value="<?php echo $dept['department_id'];?>"><?php echo $dept['department_name'];?></option>
 										<?php }?>
 								  </select><br><br>
 				<input class="btn btn-primary btn-lg" type="submit"/>

@@ -15,9 +15,14 @@
 					include "connection.php"; 	
 				
 			//run query
-					$query="SELECT * from courses c JOIN faculty f JOIN department d on c.faculty_id=f.faculty_id AND c.department_id=d.department_id";
+					$query="SELECT * from courses";
 					$course=mysqli_query($conn,$query);
 					$row=mysqli_fetch_array($course);
+					$query2="SELECT * from faculty";
+					$faculty=mysqli_query($conn,$query2);
+					$query3="SELECT * from department";
+					$dept=mysqli_query($conn,$query3);
+					
 			?>
 				<br>
 				<div class="jumbotron">	
@@ -29,12 +34,12 @@
 					
 					Name of course: <input type="text" name="course_name" value="<?php echo $row['course_name'];?>"/> <br><br>		
 					Name of Faculty:<select name="faculty_name">
-								<?php foreach($course as $stu){?>
+								<?php foreach($faculty as $stu){?>
 								<option value="<?php echo $stu['faculty_name'];?>"><?php echo $stu['faculty_name'];?></option>
 								<?php }?>
 							 </select> <br><br>
 					Name of Department:<select name="department_name">
-									<?php foreach($course as $stu){?>
+									<?php foreach($dept as $stu){?>
 									<option value="<?php echo $stu['department_name'];?>"><?php echo $stu['department_name'];?></option>
 									<?php }?>
 							  </select><br><br>
