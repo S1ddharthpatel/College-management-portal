@@ -1,7 +1,6 @@
 <html>
 
 	<body style="background-color:#24a1b7;">
-			<?php include "header.php" ?><br>
 		
 			<?php
 				
@@ -14,14 +13,21 @@
 					include "connection.php"; 	
 											
 					if(mysqli_query($conn,$autoquery))
-						{echo "<br>successfully inserted";}
+						{?>
+							<script>
+								alert("Insertion Successful");
+								window.location.replace("showfaculty.php");		
+							</script>
+						<?php	
+						}
 					else
-						{echo mysqli_error($conn);}
-				
-				
-			?>
-			
-			<a href="showfaculty.php"><br><font size="3">FACULTY DETAILS</font></a>
+						{
+							include "header.php" ;
+							echo mysqli_error($conn);
+						}
+					
+						
+					?>		
 	
 	</body>
 </html>	

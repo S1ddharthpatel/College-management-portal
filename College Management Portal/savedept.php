@@ -20,12 +20,17 @@
 			
 			
 			if(mysqli_query($conn,$autoquery))
-				{echo "<br>successfully inserted";}
+				{?>
+							<script>
+								alert("Insertion Successful");
+								window.location.replace("showdept.php");		
+							</script>
+				<?php	
+				}
 			else
 				{echo "<br>".mysqli_error($conn);}
 			
 			
 		?>
-			<a href="showdept.php"><br><font size="3">DEPARTMENT DETAILS</font></a>
 		</body>
 </html>

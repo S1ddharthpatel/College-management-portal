@@ -14,14 +14,18 @@
 					include "connection.php"; 
 					
 					if(mysqli_query($conn,$autoquery))
-						{echo "<br>successfully inserted";}
+						{?>
+							<script>
+								alert("Insertion Successful");
+								window.location.replace("showenrollment.php");		
+							</script>
+						<?php	
+						}
 					else
 						{echo mysqli_error($conn);}				
 				
 				
 			?>
-			
-			<a href="showenrollment.php"><br><font size="3">ENROLLMENTS</font></a>
 	
 	</body>
 </html>	

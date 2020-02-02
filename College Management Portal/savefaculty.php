@@ -23,12 +23,17 @@
 			
 			
 			if(mysqli_query($conn,$autoquery))
-				{echo "<br>successfully inserted";}
+				{?>
+							<script>
+								alert("Insertion Successful");
+								window.location.replace("showfaculty.php");		
+							</script>
+				<?php	
+				}
 			else
 				{echo "<br>".mysqli_error($conn);}
 			
 			
 			?>
-		<a href="showfaculty.php"><br><font size="3">FACULTY DETAILS</font></a>	
 		</body>
 </html>

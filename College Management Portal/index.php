@@ -42,7 +42,7 @@
 			</script>
 		</div>
 	
-		<img id="logo" src="Photos/logo.jpg" width="350px" align="left" HSPACE=”300”  />	
+		<img id="logo" src="Photos/logo.jpg" width="350px" align="left" HSPACE=”300” />	
 		
 		<div class="login">
 		
@@ -58,15 +58,22 @@
 			{
 						if($password==$_POST["pass"]&&$loginid==$_POST["id"])
 						{
-							
-							echo "Login Successful";?>
-							<a href="home.php" color="white" ><br>Click to continue</a>
+							?>
+							<script>
+								alert("Login Successful");
+								window.location.replace("home.php");
+								
+							</script>
+														
 						<?php	
 						}
 						else
 						{	
-							
-							echo "Login Failure<br>";
+							?>
+							<script>
+								alert("Login Failure");
+							</script>						
+						<?php
 							echo "Enter details again";
 							include "form.php";
 						}

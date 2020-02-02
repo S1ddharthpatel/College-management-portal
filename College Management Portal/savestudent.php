@@ -25,14 +25,18 @@
 
 
 					if(mysqli_query($conn,$autoquery))
-					{echo "<br>successfully inserted";}
+					{?>
+							<script>
+								alert("Insertion Successful");
+								window.location.replace("showstudents.php");		
+							</script>
+					<?php	
+					}
 					else
 					{echo mysqli_error($conn);}
 
 
 			?>
-			
-			<a href="showstudents.php"><br><font size="3">STUDENT DETAILS</font></a>
 		
 		</body>
 </html>

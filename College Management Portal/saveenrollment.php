@@ -14,10 +14,15 @@
 										VALUES (NULL,'".$_POST['student_id']."','".$_POST['course_id']."')";
 
 			if(mysqli_query($conn,$autoquery))
-				{echo "<br>successfully inserted";}
+				{?>
+							<script>
+								alert("Insertion Successful");
+								window.location.replace("showfaculty.php");		
+							</script>
+				<?php	
+				}
 			else
 				{echo "<br>".mysqli_error($conn);}			
 		?>
-			<a href="showenrollment.php"><br><font size="3">ENROLLMENTS DETAILS</font></a>
-		</body>
+	</body>
 </html>
