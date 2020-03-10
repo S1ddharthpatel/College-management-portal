@@ -1,5 +1,5 @@
 # College-management-portal
-A college management portal developed using HTML and PHP for the frontend and PHP and MySQL for the backend
+A college management portal developed using HTML, PHP, JavaScript & CSS for the frontend and MySQL for the backend
 
 COLLEGE MANAGEMENT PORTAL
 
