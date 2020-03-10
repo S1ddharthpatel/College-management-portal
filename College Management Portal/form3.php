@@ -21,6 +21,6 @@
 			<input  class="btn btn-primary btn-lg" type="reset"/>
 			</form>	
 			</div>
-	</div>
+	</div>	
 	</body>
 </html>

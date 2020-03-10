@@ -23,7 +23,8 @@
 				?>
 				
 				<button class="addbut" onclick="window.location.href='form2.php';"><font size="6">ADD STUDENT</font></button><br>
-	<div id="table">				
+		
+		<div id="table">				
 				<?php
 				
 					echo	"<table class='table  table-hover table-sm' style='width:100%'>
@@ -53,3 +54,12 @@
 	</div>		
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
