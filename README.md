@@ -1,10 +1,7 @@
 # College-management-portal
 A college management portal developed using HTML, PHP, JavaScript & CSS for the frontend and MySQL for the backend
 
-COLLEGE MANAGEMENT PORTAL
-
-The portals allows the user to add, edit and view student, faculty, department, courses and course enrollment details. It has a basic user interface for user to understand easily and and use the portal.
-All the clicks which lead to a different page are in blue colour and underlined.
+The portal is for all types of college to have a better and more efficient maintenance of data of students, teachers, departments, courses and enrollments. It allows the user to add, edit and view student, faculty, department, courses and course enrollment details. The admin login is insightful with its basic, formal and professional user interface to display all the data. The User Interface uses basic colours so its more user friendly for long hour usage. The database is really easy to understand and it has different tables to store all the data respectively and neatly, they linked with each other following all the normalization rules hence making it an efficient database. The queries have been written smartly to make the data accessing part more efficiently. The scripting language, PHP has been used smartly to display and form creations and to code wisely. The Portal has a login page which leads to a main page that further leads to different data pages to be edited, updated or for new additions or even deletion. It is a basic but a wholesome project. 
 
 Database - MySQL
 Frontend - HTML, PHP, JavaScript & CSS
